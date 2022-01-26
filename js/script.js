@@ -12,25 +12,25 @@ project 1 - A Random Quote Generator
 ***/
 let quotes = [
   {
-    quote:'Money and success dont change people they merely amplify what is already there', author: 'Will Smith', citation:'Will', year: 2020
+    quote:'Money and success dont change people they merely amplify what is already there', source: 'Will Smith', citation:'Will', year: 2020
   },
   {
-    quote:'Success is a decision not a gift.', author: 'Ben Bergeron', citation:'Chasing Excellence A Story About Building the Worlds Fittest Athletes', year: 2017
+    quote:'Success is a decision not a gift.', source: 'Ben Bergeron', citation:'Chasing Excellence A Story About Building the Worlds Fittest Athletes', year: 2017
   },
   {
-    quote:'It always seems impossible until its done', author: 'Nelson Mandela', citation:'Long Walk to Freedom', year:1990
+    quote:'It always seems impossible until its done', source: 'Nelson Mandela', citation:'Long Walk to Freedom', year:1990
   },
   {
-    quote:'Faith is taking the first step even when you cant see the whole staircase', author: 'Martin Luther King jr', citation:'Why We Can Not Wait', year:1963
+    quote:'Faith is taking the first step even when you cant see the whole staircase', source: 'Martin Luther King jr', citation:'Why We Can Not Wait', year:1963
   },
   {
-    quote:'Don’t let your alarm clock, be the only reason you wake up.', author: 'Ray Lewis', year:'unknown'
+    quote:'Don’t let your alarm clock, be the only reason you wake up.', source: 'Ray Lewis', year:'unknown'
   },
   {
-    quote:'I can accept failure everyone fails at something. But I cant accept not trying.', author: 'Michael Jordan', citation:'Driven From Within', year:2005
+    quote:'I can accept failure everyone fails at something. But I cant accept not trying.', source: 'Michael Jordan', citation:'Driven From Within', year:2005
   },
   {
-    quote:'I am going to do today what other people will not do so I can do tomorrow what other people wont be able to do.', author: 'Matt Fraser', year:'unknown'
+    quote:'I am going to do today what other people will not do so I can do tomorrow what other people wont be able to do.', source: 'Matt Fraser', year:'unknown'
   }
 ];
 
@@ -51,7 +51,7 @@ function printQuote () {
   let randomQuote = getRandomQuote();
   let quoteBox = document.getElementById("quote-box");
   let html = `<p class="quote"> ${randomQuote.quote}</p>
-              <p class="author"> ${randomQuote.author}
+              <p class="source"> ${randomQuote.source}
               <span class="citation"> ${randomQuote.citation}</span>
               `;
   if(randomQuote.year !='unknown') {
