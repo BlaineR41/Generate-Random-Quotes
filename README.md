@@ -1,2 +1,2 @@
-# Generate Random Quotes Project
+# Generate Random Quotes
  Project 1 Treehouse
